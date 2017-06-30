@@ -1,0 +1,4 @@
+# ignore Windows and MacOS X folder settings.
+.DS_Store
+.project
+Desktop.ini
