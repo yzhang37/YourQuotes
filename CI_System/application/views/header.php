@@ -1,13 +1,11 @@
-<?php 	
-?><html>
+<!DOCTYPE html>
+<html>
 <head>
-<meta charset="UTF-8">
-<title>测试页面</title>
+<meta charset="UTF-8" />
+<title><?php echo $title;?></title>
 <link href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
 <script src='http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.0.3.min.js'></script>
 <link href='https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css' rel="stylesheet" />
-</meta>
-</head>
 <style>
 	span.quoteblock
 	{
@@ -24,10 +22,9 @@
 		margin-left: 5px;
 		float:right;
 	}
-	div.author-ok
-	{
-		text-align: right;
-	}
+	div.author { display:none; }
+	div.author-ok {	text-align: right;}
+	div.quote { display:none; }
 	div.quote-ok
 	{
 		font-size: 1.5em;
@@ -71,5 +68,4 @@
 		});
 	});
 </script>
-
-</html>
+</head>
