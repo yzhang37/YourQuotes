@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8" />
 <title><?php echo $title;?></title>
-<link href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+<link type="text/css" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
 <script src='http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.0.3.min.js'></script>
-<link href='https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css' rel="stylesheet" />
+<script src='http://maxcdn.bootstrapcdn.bootcss.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>
 <style>
 	span.quoteblock
 	{

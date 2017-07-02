@@ -15,8 +15,13 @@ class Main extends CI_Controller {
 		$header_data['title']='langId: Title Text';
 		$this->load->view('header', $header_data);
 		
+		$navbar_data['website_name'] = '网站还没有名字';
+		$navbar_data['a'] = '1';
+		
+		$this->load->view('navbar', $navbar_data);
+		
 		$quote_content = array();
-		for ($i = 0; $i < 5; ++$i) {
+		for ($i = 0; $i < 20; ++$i) {
 			$q_item['content'] = '人要坚强'.$i;
 			$q_item['author'] = '坚强使者';
 			$q_item['author_id'] = $i;
