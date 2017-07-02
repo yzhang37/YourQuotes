@@ -39,7 +39,7 @@ $display_next = FALSE, $prev_label = 'langId: Previous', $next_label = 'langId: 
 		echo '><a';
 		if ($current != $start) 
 			echo ' href="javascript: void(0);" class="pagi_button" pagi_id="'.($current-1).'"';
-		echo '>langId:Previous</a></li>';
+		echo '>'.$prev_label.'</a></li>';
 	}
 	$left = $max_count;
 	$first = FALSE;
@@ -103,11 +103,11 @@ $display_next = FALSE, $prev_label = 'langId: Previous', $next_label = 'langId: 
 		echo '><a';
 		if ($current != $end) 
 			echo ' href="javascript: void(0);" class="pagi_button" pagi_id="'.($current+1).'"';
-		echo '>langId:Next</a></li>';
+		echo '>'.$next_label.'</a></li>';
 	}
 	?>
 </div>
 </div><?php
 }
 }
-emit_pagination($start, $end, $cur, $disp_count, $base_path, $dispnext);
+emit_pagination($start, $end, $cur, $disp_count, $base_path, $dispnext, $next_page, $prev_page);

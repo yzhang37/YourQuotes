@@ -14,7 +14,7 @@ class Langres_model extends CI_Model
 		$this->langId = $lang;
 	}
 	
-	public function load_resource_default($res_id, $lang = '')
+	public function load_resd($res_id, $lang = '')
 	{
 		if ( empty($lang) )
 		{
