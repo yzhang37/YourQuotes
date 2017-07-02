@@ -66,6 +66,16 @@
 			htm = "——" + htm;
 			$(this).html(htm);
 		});
+		$(".au-btn").click(function() {
+			if (typeof($(this).attr('author_id')) == "undefined") {
+				window.location.href = "/author/" + $(this).text();
+			} else {
+				window.location.href = "/author/" + $(this).attr('author_id');
+			}
+		});
+		$(".pagi_button").click(function() {
+			window.location.href = "?page=" + $(this).attr('pagi_id');
+		});
 	});
 </script>
 </head>
