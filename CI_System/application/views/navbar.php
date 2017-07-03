@@ -21,23 +21,19 @@ for ($i = 0; $i < $item_count; ++$i) {
 	echo '><a href="'.$nav_itemurls[$i].'">'.$nav_items[$i].'</a><li>';
 }
 ?>
-</ul><?php
-      //<ul class="nav navbar-nav navbar-right">
-      //  <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-      //  <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-      //</ul>
-?>
-<div class="navbar-form navbar-right">
-<div class="form-group has-feedback">
-<input class="form-control" placeholder="<?php echo $search_ph;?>"></input>
+</ul>
+<ul class="nav navbar-form navbar-nav navbar-right">
+<li class="dropdown has-feedback">
+<input class="form-control dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" placeholder="<?php echo $search_ph;?>"></input>
 <span class="glyphicon glyphicon-search form-control-feedback"></span>
-</div>
 <ul class="dropdown-menu">
     <li><a href="#">HTML</a></li>
     <li><a href="#">CSS</a></li>
     <li><a href="#">JavaScript</a></li>
 </ul>
-</div>
+</li>
+
+</ul>
 
 </div>  
 </div>
