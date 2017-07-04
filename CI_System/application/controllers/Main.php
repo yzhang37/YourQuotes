@@ -7,6 +7,7 @@ class Main extends CI_Controller {
 		$this->load->helper('nav');
 		$this->load->helper('url');
 		$this->load->model('langres_model');
+		$this->load->model('Quote_model');
 		
 		//TODO: 这一行命令很快应该要删除.
 		$this->langres_model->set_default_langid('zh-cn');
@@ -31,18 +32,8 @@ class Main extends CI_Controller {
 		$navbar_data['search_ph'] = $this->langres_model->load_resd(12);
 		$this->load->view('navbar', $navbar_data);
 		
-		//load quote contents
-		$quote_content = array();
-		for ($i = 0; $i < 10; ++$i) {
-			$q_item['content'] = '人要坚强'.$i;
-			$q_item['author'] = '坚强使者';
-			$q_item['author_id'] = $i;
-			$tags = array('善良', '积极', '向上');
-			$tags_id = array(1, 2, 3);
-			$q_item['tags'] = $tags;
-			$q_item['tags_id'] = $tags_id;
-			array_push($quote_content, $q_item);
-		}
+		//load quote contents		
+		$quote_content = $this->Quote_model->getTopRate(10);
 		$this->load->view('quote', 
 			array('tag_label' => $this->langres_model->load_resd(1),
 				  'quote_data' => $quote_content));

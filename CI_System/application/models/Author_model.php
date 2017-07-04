@@ -6,6 +6,7 @@ class Author_model extends CI_Model {
 		$this->load->model('langres_model');
 		//TODO: 这一行命令很快应该要删除.
 		$this->langres_model->set_default_langid('zh-cn');
+		parent::__construct();
 	}
 	public function getInfoById($id) {
 		$this->db->select(array('*', 'YEAR(now()) - YEAR(birthdate) - CASE WHEN MONTH(now()) > MONTH(birthdate) THEN 0 WHEN MONTH(now()) < MONTH(birthdate) THEN 1 ELSE CASE WHEN DAY(now()) < DAY(birthdate) THEN 1 ELSE 0 END END as virtAge'));
