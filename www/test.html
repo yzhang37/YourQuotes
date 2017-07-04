@@ -1,113 +1,20 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="UTF-8">
-		<title>测试页面</title>
-		<link href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
-		<script src='http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.0.3.min.js'></script>
-		<link href='https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css' rel="stylesheet" />
-	<style>
-		span.quoteblock
-		{
-			font-size: 1.5em;
-			font-weight: bold;
-		}
-		span.bg-quote
-		{
-			margin-right: 5px;
-			float:left;
-		}
-		span.ed-quote
-		{
-			margin-left: 5px;
-			float:right;
-		}
-		div.author-ok
-		{
-			text-align: right;
-		}
-		div.quote-ok
-		{
-			font-size: 1.5em;
-		}
-		div.quote-item
-		{
-			border: rgba(208, 208, 208, 1.0) 1px solid;
-			box-shadow: rgba(208, 208, 208, 1.0) 0 0 8px;
-			margin-top: 10px;
-			margin-bottom: 10px;
-		}
-		div.quote-header
-		{
-			padding:10px 10px 10px 10px;
-			border-bottom: rgba(208, 208, 208, 1.0) solid 1px;
-		}
-		div.quote-content
-		{
-			padding:2px 10px 2px 10px;
-		}
-		div.quote-footer
-		{
-			padding: 0px 10px 0px 10px;
-			border-top: rgba(208, 208, 208, 1.0) solid 1px;
-			background: rgba(232, 232, 232, 1.0);
-		}
-	</style>
-	<script type="text/javascript">
-		jQuery(function(){
-			$("div.quote").each(function() {
-				$(this).attr("class", "quote-ok");
-				var htm = $(this).html();
-				htm = '<span class="quoteblock bg-quote">“</span>' + htm + '<span class="quoteblock ed-quote">”</span>';
-				$(this).html(htm);
-			});
-			$("div.author").each(function() {
-				$(this).attr("class", "author-ok");
-				var htm = $(this).html();
-				htm = "——" + htm;
-				$(this).html(htm);
-			});
-		});
-	</script>
-	</head>
-	<body>
-		<div class="container quote-item">
-			<div class="row quote-content">
-				<div class="quote">langId:Quote-content</div>
-			</div>
-			<div class="row quote-content">
-				<div class="author">langId: author</div>
-			</div>
-			<div class="row quote-footer">
-				langId-tags:
-				<button class="btn btn-link">langId:tag</button>
-				<button class="btn btn-link">langId:tag</button>
-				<button class="btn btn-link">langId:tag</button>
-				<button class="btn btn-link">langId:tag</button>
-				<button class="btn btn-link">langId:tag</button>
-				<button class="btn btn-link">langId:tag</button>
-				<button class="btn btn-link">langId:tag</button>
-				<button class="btn btn-link">langId:tag</button>
-				<button class="btn btn-link">langId:tag</button>
-			</div>
-		</div>
-		<div class="container quote-item">
-			<div class="row quote-content">Windows 95</div>
-			<div class="row quote-content">Windows 95</div>
-			<div class="row quote-content">Windows 95</div>
-			<div class="row quote-content">Windows 95</div>
-			<div class="row quote-content">Windows 95</div>
-			<div class="row quote-content">Windows 95</div>
-			<div class="row quote-content">Windows 95</div>
-			<div class="row quote-content">Windows 95</div>
-		</div>
-		<div style="text-align: center;"><ul class="pagination">
-			<li><a>1</a></li>
-			<li><a>2</a></li>
-			<li><a>3</a></li>
-			<li class="disabled"><a>...</a></li>
-			<li><a>4</a></li>
-			<li><a>5</a></li>
-		</ul></div>
-	</body>
-</html>
+<head>
+<meta charset="UTF-8" />
+<title>测试页面</title>
+<link type="text/css" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+<link type="text/css" href="/assets/quote_style.css" rel="stylesheet" />
+<script src='http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.0.3.min.js'></script>
+<script src='http://maxcdn.bootstrapcdn.bootcss.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>
+<script src='/assets/quote_interactive.js'></script>
+<script src='/assets/moment-with-locales.min.js'></script>
+<script>
+jQuery(function() {
+	var d = new Date('0001/01/01 11:00:00');
+})
+</script>
+</head>
+<body>
+	
+</body>

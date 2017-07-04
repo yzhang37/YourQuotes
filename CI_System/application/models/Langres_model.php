@@ -1,4 +1,5 @@
 <?php
+defined('BASEPATH') OR exit('No direct script access allowed');
 class Langres_model extends CI_Model
 {
 	public $langId = 'en-us';
@@ -29,7 +30,17 @@ class Langres_model extends CI_Model
 			$row = $query->first_row();
 			return $row->text;
 		} else {
-			return 'res_'.$res_id.'['.$lang.']';
+			$this->db->select(array('rid', 'langid', 'type', 'text'));
+			$where_param = array('rid =' => $res_id);
+			$this->db->where($where_param);
+			$query = $this->db->get('resource');
+			
+			if ( $query->num_rows() > 0) {
+				$row = $query->first_row();
+				return $row->text;
+			} else {
+				return 'res_'.$res_id.'['.$lang.']';
+			}
 		}
 	}
 }

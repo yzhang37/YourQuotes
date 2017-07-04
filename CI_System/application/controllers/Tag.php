@@ -3,22 +3,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Tag extends CI_Controller {	
 	public function _remap($method = '', $args = array())
-	{
-		if (is_numeric($method)) {
-			return call_user_func_array(array($this, 'id'), array($method));
-		} elseif ($method == 'index') {
-			return call_user_func_array(array($this, 'index'), $args);
-		} else {
-			return call_user_func_array(array($this, 'name'), array($method));
-		}
-	}
-	
-	public function index() {
+	{	
 		$this->load->helper('nav');
 		$this->load->model('langres_model');
 		//TODO: 这一行命令很快应该要删除.
 		$this->langres_model->set_default_langid('zh-cn');
-		
 		//load header files
 		$header_data['title']=$this->langres_model->load_resd(20);
 		$this->load->view('header', $header_data);
@@ -39,14 +28,23 @@ class Tag extends CI_Controller {
 		$navbar_data['search_ph'] = $this->langres_model->load_resd(12);
 		$this->load->view('navbar', $navbar_data);
 		
+		if (is_numeric($method)) {
+			return call_user_func_array(array($this, 'id'), array($method));
+		} elseif ($method == 'index') {
+			return call_user_func_array(array($this, 'index'), $args);
+		} else {
+			return call_user_func_array(array($this, 'name'), array($method));
+		}
+	}
+	
+	public function index() {
+		$this->load->view('tag_mainpage');
 	}
 	
 	public function id($tag_id)
 	{
-		echo '准备输入'.$tag_id;
-		return;
-		//on error, display 404 error;
-		show_404();
+		
+		
 	}
 	
 	public function name($tag_name)

@@ -12,7 +12,7 @@
 <div class="collapse navbar-collapse" id="myNavbar">
 <ul class="nav navbar-nav">
 <?php
-$item_count = count($nav_items);
+$item_count = count((isset($nav_items)?$nav_items:array()));
 for ($i = 0; $i < $item_count; ++$i) {
 	echo '<li';
 	if ($selected_item == $nav_items[$i]) {
@@ -24,12 +24,10 @@ for ($i = 0; $i < $item_count; ++$i) {
 </ul>
 <ul class="nav navbar-form navbar-nav navbar-right">
 <li class="dropdown has-feedback">
-<input class="form-control dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" placeholder="<?php echo $search_ph;?>"></input>
+<input class="form-control dropdown-toggle" data-toggle="dropdown"	 aria-haspopup="true" aria-expanded="false" placeholder="<?php echo $search_ph;?>"></input>
 <span class="glyphicon glyphicon-search form-control-feedback"></span>
 <ul class="dropdown-menu">
-    <li><a href="#">HTML</a></li>
-    <li><a href="#">CSS</a></li>
-    <li><a href="#">JavaScript</a></li>
+    <li><a href="#" id="direct-search">搜索...</a></li>
 </ul>
 </li>
 
