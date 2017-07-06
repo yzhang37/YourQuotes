@@ -1,0 +1,288 @@
+.btn-color-0 {
+	color: #fff;
+	background-color: #ff6b6b;
+	border-color: #e55050;
+}
+.btn-color-0:hover,
+.btn-color-0.hover {
+	color: #fff;
+	background-color: #e55050;
+	border-color: #bf3939;
+}
+
+.btn-color-0:focus,
+.btn-color-0.focus {
+	color: #fff;
+	background-color: #e55050;
+	border-color: #991f1f;
+}
+
+.btn-color-1 {
+	color: #fff;
+	background-color: #ffa46b;
+	border-color: #e58a50;
+}
+.btn-color-1:hover,
+.btn-color-1.hover {
+	color: #fff;
+	background-color: #e58a50;
+	border-color: #bf6d39;
+}
+.btn-color-1:focus,
+.btn-color-1.focus {
+	color: #fff;
+	background-color: #e58a50;
+	border-color: #994e1f;
+}
+
+.btn-color-2 {
+	color: #73590b;
+	background-color: #ffda6b;
+	border-color: #e5c050;
+}
+.btn-color-2:hover,
+.btn-color-2.hover {
+	color: #73590b;
+	background-color: #e5c050;
+	border-color: #bf9e39;
+}
+.btn-color-2:focus,
+.btn-color-2.focus {
+	color: #73590b;
+	background-color: #e5c050;
+	border-color: #997a1f;
+}
+
+.btn-color-3 {
+	color: #65730b;
+	background-color: #e9ff59;
+	border-color: #d2e550;
+}
+.btn-color-3:hover,
+.btn-color-3.hover {
+	color: #65730b;
+	background-color: #d2e550;
+	border-color: #adbf39;
+}
+.btn-color-3:focus,
+.btn-color-3.focus {
+	color: #65730b;
+	background-color: #d2e550;
+	border-color: #89991f;
+}
+
+.btn-color-4 {
+	color: #3f730b;
+	background-color: #acff59;
+	border-color: #9be550;
+}
+.btn-color-4:hover,
+.btn-color-4.hover {
+	color: #3f730b;
+	background-color: #9be550;
+	border-color: #7cbf39;
+}
+.btn-color-4:focus,
+.btn-color-4.focus {
+	color: #3f730b;
+	background-color: #9be550;
+	border-color: #5c991f;
+}
+
+.btn-color-5 {
+	color: #18730b;
+	background-color: #6dff59;
+	border-color: #62e550;
+}
+.btn-color-5:hover,
+.btn-color-5.hover {
+	color: #18730b;
+	background-color: #62e550;
+	border-color: #49bf39;
+}
+.btn-color-5:focus,
+.btn-color-5.focus {
+	color: #18730b;
+	background-color: #62e550;
+	border-color: #2d991f;
+}
+
+.btn-color-6 {
+	color: #0b7325;
+	background-color: #59ff83;
+	border-color: #50e576;
+}
+.btn-color-6:hover,
+.btn-color-6.hover {
+	color: #0b7325;
+	background-color: #50e576;
+	border-color: #39bf5b;
+}
+.btn-color-6:focus,
+.btn-color-6.focus {
+	color: #0b7325;
+	background-color: #50e576;
+	border-color: #1f993d;
+}
+
+.btn-color-7 {
+	color: #0b734d;
+	background-color: #59ffc2;
+	border-color: #50e5af;
+}
+.btn-color-7:hover,
+.btn-color-7.hover {
+	color: #0b734d;
+	background-color: #50e5af;
+	border-color: #39bf8e;
+}
+.btn-color-7:focus,
+.btn-color-7.focus {
+	color: #0b734d;
+	background-color: #50e5af;
+	border-color: #1f996c;
+}
+
+.btn-color-8 {
+	color: #0b7373;
+	background-color: #59ffff;
+	border-color: #50e5e5;
+}
+.btn-color-8:hover,
+.btn-color-8.hover {
+	color: #0b7373;
+	background-color: #50e5e5;
+	border-color: #39bfbf;
+}
+.btn-color-8:focus,
+.btn-color-8.focus {
+	color: #0b7373;
+	background-color: #50e5e5;
+	border-color: #1f9999;
+}
+
+.btn-color-9 {
+	color: #fff;
+	background-color: #59bfff;
+	border-color: #50ace5;
+}
+.btn-color-9:hover,
+.btn-color-9.hover {
+	color: #fff;
+	background-color: #50ace5;
+	border-color: #398cbf;
+}
+.btn-color-9:focus,
+.btn-color-9.focus {
+	color: #fff;
+	background-color: #50ace5;
+	border-color: #1f6a99;
+}
+
+.btn-color-A {
+	color: #fff;
+	background-color: #5983ff;
+	border-color: #5076e5;
+}
+.btn-color-A:hover,
+.btn-color-A.hover {
+	color: #fff;
+	background-color: #5076e5;
+	border-color: #395bbf;
+}
+.btn-color-A:focus,
+.btn-color-A.focus {
+	color: #fff;
+	background-color: #5076e5;
+	border-color: #1f3d99;
+}
+
+.btn-color-B {
+	color: #fff;
+	background-color: #6f59ff;
+	border-color: #6450e5;
+}
+.btn-color-B:hover,
+.btn-color-B.hover {
+	color: #fff;
+	background-color: #6450e5;
+	border-color: #4b39bf;
+}
+.btn-color-B:focus,
+.btn-color-B.focus {
+	color: #fff;
+	background-color: #6450e5;
+	border-color: #2f1f99;
+}
+
+.btn-color-C {
+	color: #fff;
+	background-color: #ac59ff;
+	border-color: #9b50e5;
+}
+.btn-color-C:hover,
+.btn-color-C.hover {
+	color: #fff;
+	background-color: #9b50e5;
+	border-color: #7c39bf;
+}
+.btn-color-C:focus,
+.btn-color-C.focus {
+	color: #fff;
+	background-color: #9b50e5;
+	border-color: #5c1f99;
+}
+
+.btn-color-D {
+	color: #fff;
+	background-color: #e959ff;
+	border-color: #d450e5;
+}
+.btn-color-D:hover,
+.btn-color-D.hover {
+	color: #fff;
+	background-color: #d450e5;
+	border-color: #b039bf;
+}
+.btn-color-D:focus,
+.btn-color-D.focus {
+	color: #fff;
+	background-color: #d450e5;
+	border-color: #8b1f99; 
+}
+
+.btn-color-E {
+	color: #fff;
+	background-color: #ff59d6;
+	border-color: #e550c0;
+}
+.btn-color-E:hover,
+.btn-color-E.hover {
+	color: #fff;
+	background-color: #e550c0;
+	border-color: #bf399e;
+}
+.btn-color-E:focus,
+.btn-color-E.focus {
+	color: #fff;
+	background-color: #e550c0;
+	border-color: #991f7a;
+}
+
+.btn-color-F {
+	color: #fff;
+	background-color: #ff5996;
+	border-color: #e55087;
+}
+.btn-color-F:hover,
+.btn-color-F.hover {
+	color: #fff;
+	background-color: #e55087;
+	border-color: #bf396a;
+}
+.btn-color-F:focus,
+.btn-color-F.focus {
+	color: #fff;
+	background-color: #e55087;
+	border-color: #991f4b;
+}
