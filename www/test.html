@@ -5,16 +5,94 @@
 <title>测试页面</title>
 <link type="text/css" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
 <link type="text/css" href="/assets/quote_style.css" rel="stylesheet" />
+<link type="text/css" href="/assets/16c_cbtn.css" rel="stylesheet" />
 <script src='http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.0.3.min.js'></script>
 <script src='http://maxcdn.bootstrapcdn.bootcss.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>
 <script src='/assets/quote_interactive.js'></script>
 <script src='/assets/moment-with-locales.min.js'></script>
+<style>
+ul.tag-list {
+	list-style-type: none;	
+}
+ul.tag-list li {
+	position: absolute;
+}
+</style>
 <script>
+var hex = new Array('0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F');
+
+function RandInt(min, max) {
+	return (min + Math.round(Math.random() * (max - min)));  
+}   
+	
 jQuery(function() {
-	var d = new Date('0001/01/01 11:00:00');
-})
+	init_display();
+	$("ul.tag-list").each(function() {
+		$(this).find("li").each(function() {
+			var btn = $(this).find("a");
+			btn.removeAttr("class");
+			$(this).removeAttr("posx");
+			$(this).removeAttr("posy");
+			btn.addClass("btn");
+			btn.addClass("btn-color-"+hex[RandInt(0, 15)]);
+			var x = Math.random().toFixed(3);
+			var y = Math.random().toFixed(3);
+			$(this).attr("posx", x);
+			$(this).attr("posy", y);
+		});
+	});
+	function refresh_tag(box) {
+		var b_width = Number(box.width());
+		var b_height = Number(box.height());
+		var base = box.offset();
+		box.find("ul.tag-list").each(function() {
+			$(this).find("li").each(function() {
+				var this_width = Number($(this).width());
+				var this_height = Number($(this).height());
+				var this_posx = Number($(this).attr("posx"));
+				var this_posy = Number($(this).attr("posy"));
+				var lx = base.left + (b_width - this_width) * this_posx;
+				var ty = base.top + (b_height - this_height) * this_posy;
+				$(this).css("left", lx.toString()+"px");
+				$(this).css("top", ty.toString()+"px");
+			});
+		});
+	}
+	function init_display() {
+		$("#display-box").each(function () {
+			if (typeof($(this).attr("orig_width")) == "undefined" || 
+				$(this).attr("orig_width") != $(this).width()) {
+				$(this).height($(this).width() / 5 * 2);
+				$(this).attr("orig_width", $(this).width());
+			}
+			refresh_tag($(this));
+		});
+	}
+	$(window).resize(init_display);
+});
 </script>
 </head>
 <body>
-	
+<div class="container">
+	<h1>123</h1>
+	<h1>123</h1>
+	<h1>123</h1>
+	<h1>123</h1>
+<div class="panel panel-default">
+<div class="panel-body">
+<div id="display-box">
+<ul class="tag-list">
+<li><a href="#">love</a></li>
+<li><a href="#">life</a></li>
+<li><a href="#">deep-thought</a></li>
+<li><a href="#">thinking</a></li>
+<li><a href="#">confident</a></li>
+<li><a href="#">success</a></li>
+<li><a href="#">humor</a></li>
+<li><a href="#">reading</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
 </body>

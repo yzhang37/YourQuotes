@@ -1,7 +1,6 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
-?><div class="container">
-<div class="panel panel-default author-panel">
+?><div class="panel panel-default author-panel">
 <div class="panel-heading">
 <?php
 if ( ! empty($auth_scndname)) {
@@ -26,6 +25,5 @@ for ($i = 0; $i < $item_nums; ++$i) {
 <?php if ( ! empty($auth_dspr)) {
 	echo $auth_dspr;
 }?></div>
-</div>
 </div>
 </div>

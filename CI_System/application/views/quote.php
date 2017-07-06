@@ -16,7 +16,8 @@ function proto_emit_quote($quote = 'langId-quote',
 	 $author = 'langId-author', $author_id = -1, $tag_title = 'langId: tag',
 	 $tags = array(), $tagIDs = array()) {
 	?>
-<div class="container quote-item">
+<div class="panel quote-item">
+<div class="panel-body">
 <div class="row quote-content">
 <div class="quote"><?php
 	echo $quote;
@@ -30,7 +31,8 @@ function proto_emit_quote($quote = 'langId-quote',
 	echo '>'.$author.'</a>';
 ?></div>
 </div>
-<div class="row quote-footer"><?php
+</div>
+<div class="panel-footer"><?php
 	echo $tag_title;
 	
 	$tag_count = count($tags);
@@ -41,7 +43,8 @@ function proto_emit_quote($quote = 'langId-quote',
 		echo $tags[$i];
 		echo '</a>';	
 	}
-?></div>
+?>
+</div>
 </div><?php
 }
 

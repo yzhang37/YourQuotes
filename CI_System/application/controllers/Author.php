@@ -49,6 +49,11 @@ class Author extends CI_Controller {
 			echo '没有找到这个 id 对应的作者。';
 		} else {
 			$this->load->view('author_detail', $result);
+			$top_rated_data['auth_name'] = $result['auth_name'];
+			$top_rated_data['toprate_title'] = $this->langres_model->load_resd(24);
+			$top_rated_data['quote_title'] = $this->langres_model->load_resd(25);
+			$top_rated_data['tag_title'] = $this->langres_model->load_resd(26);
+			$this->load->view('top_rated', $top_rated_data);
 		}
 	}
 	

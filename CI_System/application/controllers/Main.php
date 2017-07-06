@@ -13,9 +13,8 @@ class Main extends CI_Controller {
 		$this->langres_model->set_default_langid('zh-cn');
 		
 		//load header files
-		$header_data['title']=$this->langres_model->load_resd(20);
+		$header_data['title']=$this->langres_model->load_resd(20);		
 		$this->load->view('header', $header_data);
-		
 		//load navigate bar files
 		$navbar_data['website_name'] = $header_data['title'];
 		$navbar_item = array();

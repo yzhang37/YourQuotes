@@ -38,7 +38,9 @@ class Tag extends CI_Controller {
 	}
 	
 	public function index() {
-		$this->load->view('tag_mainpage');
+		$tag_mainpage_data['need'] = $this->langres_model->load_resd(21);
+		$tag_mainpage_data['doWhat'] = $this->langres_model->load_resd(22);
+		$this->load->view('tag_mainpage', $tag_mainpage_data);
 	}
 	
 	public function id($tag_id)

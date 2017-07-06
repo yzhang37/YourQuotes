@@ -1,5 +1,5 @@
-<nav class="navbar navbar-default">
 <div class="container-fluid">
+<nav class="navbar navbar-default">
 <div class="navbar-header">
 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
 <span class="icon-bar"></span>
@@ -30,9 +30,7 @@ for ($i = 0; $i < $item_count; ++$i) {
     <li><a href="#" id="direct-search">搜索...</a></li>
 </ul>
 </li>
-
 </ul>
-
 </div>  
-</div>
-</nav>
+</nav> </div>
+<div class="container">
