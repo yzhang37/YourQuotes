@@ -6,17 +6,20 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <h3><?php echo (isset($doWhat)?$doWhat:'langId: Need brain-storming?');?></h3>
 </div>
 <div class="panel-body" id="display-box">
-<ul>
-<li>love</li>
-<li>inspirational</li>
-<li>life</li>
-<li>humor</li>
-<li>books</li>
-<li>reading</li>
-<li>friendship</li>
-<li>friends</li>
-<li>truth</li>
-<li>simile</li>
+<ul class="tag-list">
+<li><a href="#">love</a></li>
+<li><a href="#">inspirational</a></li>
+<li><a href="#">life</a></li>
+<li><a href="#">humor</a></li>
+<li><a href="#">books</a></li>
+<li><a href="#">reading</a></li>
+<li><a href="#">friendship</a></li>
+<li><a href="#">friends</a></li>
+<li><a href="#">truth</a></li>
+<li><a href="#">simile</a></li>
 </ul>
+</div>
+<div class="panel-footer">
+	Copyright(C) 2007-2016
 </div>
 </div>

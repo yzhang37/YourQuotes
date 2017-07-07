@@ -1,0 +1,6 @@
+ul.tag-list {
+	list-style-type: none;	
+}
+ul.tag-list li {
+	position: absolute;
+}
