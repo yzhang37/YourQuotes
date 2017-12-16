@@ -92,7 +92,7 @@ jQuery(function() {
 		$("#display-box").each(function () {
 			if (typeof($(this).attr("orig_width")) == "undefined" || 
 				$(this).attr("orig_width") != $(this).width()) {
-				$(this).height($(this).width() / 5 * 2);
+				$(this).height($(this).width() * 0.32);
 				$(this).attr("orig_width", $(this).width());
 			}
 			refresh_tag($(this));

@@ -1,4 +1,7 @@
-jQuery(function(){
+jQuery(adjustQuotes);
+
+function adjustQuotes()
+{
 	$("div.quote").each(function() {
 		$(this).attr("class", "quote-ok");
 		var htm = $(this).html();
@@ -21,4 +24,4 @@ jQuery(function(){
 	$(".pagi_button").click(function() {
 		window.location.href = "?page=" + $(this).attr('pagi_id');
 	});
-});
+}

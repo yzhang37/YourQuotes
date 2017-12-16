@@ -1,6 +1,10 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
-?><div class="panel panel-default author-panel">
+?>
+<script type="text/javascript">
+	jQuery(function() {switchToQuotes($("#auth_tab_quote"));});
+</script> 
+<div class="panel panel-default author-panel">
 <div class="panel-heading">
 <?php
 if ( ! empty($auth_scndname)) {

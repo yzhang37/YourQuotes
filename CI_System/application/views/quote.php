@@ -49,7 +49,6 @@ function proto_emit_quote($quote = 'langId-quote',
 }
 
 }
-
 $item_count = count($quote_data);
 foreach ($quote_data as $data) {
 	proto_emit_quote($data['content'], 

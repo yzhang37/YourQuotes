@@ -53,7 +53,8 @@ class Author extends CI_Controller {
 			$top_rated_data['toprate_title'] = $this->langres_model->load_resd(24);
 			$top_rated_data['quote_title'] = $this->langres_model->load_resd(25);
 			$top_rated_data['tag_title'] = $this->langres_model->load_resd(26);
-			$this->load->view('top_rated', $top_rated_data);
+			$top_rated_data['author_id'] = $id;
+			$this->load->view('top_rated', $top_rated_data);	
 		}
 	}
 	
